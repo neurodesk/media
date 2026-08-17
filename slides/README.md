@@ -7,8 +7,8 @@ talks about Neurodesk.
 
 | File | Format | Purpose | Status |
 |---|---|---|---|
-| `neurodesk-poster-vertical.potx` | PowerPoint template | Portrait conference poster | pending migration |
-| `neurodesk-poster-horizontal.potx` | PowerPoint template | Landscape conference poster | pending migration |
+| `neurodesk-poster-vertical.potx` | PowerPoint template | Portrait conference poster | committed |
+| `neurodesk-poster-horizontal.potx` | PowerPoint template | Landscape conference poster | committed |
 
 ## Not stored here
 

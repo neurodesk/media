@@ -9,23 +9,22 @@ the logo is a project mark, not CC-BY. Visual standards live in the
 
 ## Inventory
 
-Nothing is committed yet. These are the variants currently published at
-`neurodesk.org/static/logos/`, with the names they'll take here. See
-[MIGRATION.md](../MIGRATION.md).
+Migrated from the website repo's `public/logos/` and renamed to a single
+convention. See [MIGRATION.md](../MIGRATION.md) for the old-to-new map.
 
 | File | Variant | Use on | Status |
 |---|---|---|---|
-| `neurodesk-logo.png` | Simple | Light / neutral backgrounds | pending migration |
-| `neurodesk-logo-pride.png` | Simple, Pride | Light / neutral backgrounds | pending migration |
-| `neurodesk-logo-on-dark.png` | Simple | Dark backgrounds | pending migration |
-| `neurodesk-logo-pride-on-dark.png` | Simple, Pride | Dark backgrounds | pending migration |
-| `neurodesk-logo-horizontal.png` | Horizontal lockup | Wide headers | pending migration |
-| `neurodesk-org-logo.png` | With web address | Light / neutral backgrounds | pending migration |
-| `neurodesk-org-logo-pride.png` | With web address, Pride | Light / neutral backgrounds | pending migration |
-| `neurodesk-org-logo-on-dark.png` | With web address | Dark backgrounds | pending migration |
-| `neurodesk-org-logo-pride-on-dark.png` | With web address, Pride | Dark backgrounds | pending migration |
-| `neurodesk-org-logo-horizontal.png` | With web address, horizontal | Wide headers | pending migration |
-| `neurodesk-org-wordmark.png` | Text only, no mark | Where the icon is redundant | pending migration |
+| `neurodesk-logo.png` | Simple | Light / neutral backgrounds | committed |
+| `neurodesk-logo-pride.png` | Simple, Pride | Light / neutral backgrounds | committed |
+| `neurodesk-logo-on-dark.png` | Simple | Dark backgrounds | committed |
+| `neurodesk-logo-pride-on-dark.png` | Simple, Pride | Dark backgrounds | committed |
+| `neurodesk-logo-horizontal.png` | Horizontal lockup | Wide headers | committed |
+| `neurodesk-org-logo.png` | With web address | Light / neutral backgrounds | committed |
+| `neurodesk-org-logo-pride.png` | With web address, Pride | Light / neutral backgrounds | committed |
+| `neurodesk-org-logo-on-dark.png` | With web address | Dark backgrounds | committed |
+| `neurodesk-org-logo-pride-on-dark.png` | With web address, Pride | Dark backgrounds | committed |
+| `neurodesk-org-logo-horizontal.png` | With web address, horizontal | Wide headers | committed |
+| `neurodesk-org-wordmark.png` | Text only, no mark | Where the icon is redundant | committed |
 
 ## Known gap: no vector masters
 

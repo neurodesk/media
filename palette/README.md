@@ -13,7 +13,7 @@ and nowhere else in the repo.
 
 | File | Format | Purpose | Status |
 |---|---|---|---|
-| `neurodesk-color-palette.ai` | Illustrator swatches | Design tool import | pending migration |
+| `neurodesk-color-palette.ai` | Illustrator swatches | Design tool import | committed |
 
 ## Possible additions
 

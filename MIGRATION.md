@@ -6,7 +6,8 @@ The Neurodesk logos, palette, and templates currently live in
 files; the [Designer Guide](https://neurodesk.org/developers/designer/) stays as the
 human-facing guide and links here for downloads.
 
-**Nothing has been moved yet.** This is the checklist.
+**Status:** the files have been copied in under the new names (step 1 done). Steps 2–6
+below are still outstanding.
 
 ## Why rename
 
@@ -51,7 +52,9 @@ New convention: `neurodesk[-org]-<form>[-pride][-on-dark].<ext>`, lowercase, hyp
 
 ## Steps
 
-1. **Copy the files into this repo** under the new names. Do not delete the originals yet.
+1. ~~**Copy the files into this repo** under the new names.~~ Done — copied from
+   `neurodesk.github.io-astro/public/logos/` and `public/template-presentations/`.
+   Originals left in place deliberately; see step 6.
 2. **Trace vector masters.** Every logo is currently PNG-only — there is no SVG anywhere.
    This is the biggest gap: PNG can't be scaled for a poster or a print run. Produce
    `logo/svg/*.svg` masters from the Illustrator source, commit them, and let CI render
