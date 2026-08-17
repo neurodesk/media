@@ -1,0 +1,32 @@
+name: Asset request
+description: Ask for a logo variant, figure, or screenshot that doesn't exist yet
+labels: ["asset request"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What do you need?
+      description: Describe the asset — subject, variant, format.
+      placeholder: A mono-white version of the logo for dark-mode README headers.
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where will it be used?
+      placeholder: neurodesktop README, docs site, a conference poster
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Format needed
+      multiple: true
+      options: [SVG, PNG, PDF, ICO, Other]
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Needed by (optional)
+      placeholder: Before the OHBM abstract deadline

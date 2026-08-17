@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Neurodesk discussions
+    url: https://github.com/orgs/neurodesk/discussions
+    about: General questions about the Neurodesk project
+  - name: Contact the Neurodesk team
+    url: https://neurodesk.org/contact/
+    about: Anything that isn't about these assets

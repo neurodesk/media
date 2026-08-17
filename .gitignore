@@ -1,0 +1,30 @@
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editor and design tool scratch files
+*~
+*.swp
+.idea/
+.vscode/
+*.tmp
+*.bak
+
+# Design tool autosaves / recovery files
+*.psb
+*~lock*
+*.ai.bak
+
+# Node, if anyone runs svgo/oxipng locally
+node_modules/
+package-lock.json
+
+# Python
+__pycache__/
+*.pyc

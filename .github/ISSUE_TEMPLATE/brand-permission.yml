@@ -1,0 +1,28 @@
+name: Logo usage permission
+description: Request permission for a logo use that BRAND.md says to ask about
+labels: ["brand"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Many uses need no permission at all — check
+        [BRAND.md](https://github.com/neurodesk/media/blob/main/BRAND.md) first.
+        This form is for modified logos, lockups, merchandise, or anything that could
+        imply endorsement.
+  - type: textarea
+    id: use
+    attributes:
+      label: How do you want to use the Neurodesk mark?
+    validations:
+      required: true
+  - type: input
+    id: who
+    attributes:
+      label: Who are you / what organisation?
+    validations:
+      required: true
+  - type: textarea
+    id: mockup
+    attributes:
+      label: Mockup or link (optional)
+      description: Drop an image or link showing the intended use.

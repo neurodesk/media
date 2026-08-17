@@ -1,0 +1,84 @@
+name: Validate assets
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Naming, format and size
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Check assets
+        run: python3 scripts/check_assets.py
+
+  diff-size:
+    name: PR size budget
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Measure added bytes
+        run: |
+          set -euo pipefail
+          BASE="origin/${{ github.base_ref }}"
+          git fetch --no-tags --depth=1 origin "${{ github.base_ref }}"
+
+          ADDED=0
+          while IFS= read -r f; do
+            [ -f "$f" ] || continue
+            SIZE=$(stat -c%s "$f")
+            ADDED=$((ADDED + SIZE))
+          done < <(git diff --name-only --diff-filter=AM "$BASE"...HEAD)
+
+          LIMIT=$((5 * 1024 * 1024))
+          echo "This PR adds/modifies $((ADDED / 1024)) KB."
+
+          if [ "$ADDED" -gt "$LIMIT" ]; then
+            echo "::error::PR adds $((ADDED / 1024 / 1024)) MB, over the 5 MB budget. Optimise the assets or split the PR. See CONTRIBUTING.md."
+            exit 1
+          fi
+
+  render:
+    name: Re-render logo PNGs
+    runs-on: ubuntu-latest
+    needs: validate
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install librsvg
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+
+      - name: Render
+        run: ./scripts/render-png.sh
+
+      - name: Commit derivatives if changed
+        run: |
+          set -euo pipefail
+          if [ -z "$(git status --porcelain logo/png)" ]; then
+            echo "PNG derivatives already up to date."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add logo/png
+          git commit -m "chore: re-render logo PNG derivatives [skip ci]"
+          git push

@@ -1,0 +1,32 @@
+# Treat asset formats as binary so git doesn't try to diff or merge them.
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.webp binary
+*.ico  binary
+*.pdf  binary
+*.mp4  binary
+*.webm binary
+*.mov  binary
+*.psd  binary
+*.ai   binary
+*.sketch binary
+*.pptx binary
+*.odp  binary
+*.key  binary
+
+# SVG is XML: keep it diffable and normalise line endings.
+*.svg text eol=lf diff
+
+# Docs and scripts
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.py   text eol=lf
+*.sh   text eol=lf
+
+# Keep repo housekeeping out of release archives.
+.github/      export-ignore
+scripts/      export-ignore
+.gitattributes export-ignore
