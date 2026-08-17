@@ -68,6 +68,16 @@ CI enforces these:
 | Palette swatches and deck templates (`.ai`, `.potx`, `.pptx`, `.odp`, `.key`) | **8 MB** |
 | Total repo growth per PR | **5 MB** |
 
+A named file may be granted a higher ceiling via `SIZE_EXEMPTIONS` in
+`scripts/check_assets.py`, but only where no smaller format exists — an SVG that is
+entirely embedded raster, for example. Each entry records the reason and its own cap, so
+CI still fails if the file grows past it. Ask before adding one.
+
+**PowerPoint files need attention before committing.** Run File → Compress Pictures,
+delete unused layouts and masters, and strip embedded video. PowerPoint frequently stores
+the same image several times; the current slide template is 46.8 MB of which ~21 MB is
+duplicates.
+
 This repo does **not** use Git LFS, deliberately: LFS bandwidth is billed against the
 org quota, and `raw.githubusercontent.com` serves LFS pointer text rather than the real
 image — which would break every hot-link in our docs.

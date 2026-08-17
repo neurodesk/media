@@ -1,10 +1,9 @@
 # templates/
 
-Reusable presentation material: conference poster templates, and deck templates for
-talks about Neurodesk.
+Editable templates people start from: conference posters, and slide decks.
 
-This folder was called `slides/` until 17 August 2026. It was renamed because everything
-in it is a **poster** template, and "slides" was misleading.
+This folder was called `slides/` until 17 August 2026. It was renamed because "slides"
+described only part of what belongs here.
 
 ## Inventory
 
@@ -13,19 +12,34 @@ in it is a **poster** template, and "slides" was misleading.
 | `neurodesk-poster-vertical.potx` | PowerPoint template | Portrait conference poster |
 | `neurodesk-poster-horizontal.potx` | PowerPoint template | Landscape conference poster |
 
-## Not stored here
+### Pending
 
-The **Neurodesk overview slide deck** lives on UQ SharePoint and is access-controlled to
-the Neurodesk team. Request access by emailing <mail.neurodesk@gmail.com>. It stays
-there rather than moving here — it is internal, frequently edited, and too large for a
-git repo.
+The **Neurodesk slide template** (`20250624-neurodesk-slides.potx`) is not here yet. The
+current export is 46.8 MB, well over the 8 MB limit, and roughly 21 MB of that is the
+same images stored several times over — `image22.emf` and `image6.emf` are byte-identical
+9.4 MB copies, and there are four more such pairs.
 
-If a version of it is ever cleared for public release, export it to `.potx` and add it
-to the table above.
+Re-saving from PowerPoint with **File → Compress Pictures**, and deleting unused layouts
+and masters, should collapse the duplicates. Add it here once it fits.
+
+## Finished decks are not stored here
+
+Delivered talks and the Neurodesk overview deck live outside this repository. See
+**Template presentations** in the
+[Designer Guide](https://neurodesk.org/developers/designer/#template-presentations) for
+how to get them.
+
+Commit editable templates (`.potx`, `.otp`), not finished decks (`.pptx`) — people should
+start from a blank canvas, not someone else's talk.
 
 ## Adding a template
 
-Commit the editable template (`.potx`, `.otp`) rather than a finished deck (`.pptx`), so
-people start from a blank canvas. Keep it under 8 MB — strip embedded video and
-downsample images first. Use the palette in [`palette/`](../palette/) and the fonts named
-in the [Designer Guide](https://neurodesk.org/developers/designer/#typography).
+Keep it under 8 MB. Before committing:
+
+- **File → Compress Pictures**, targeting 150 ppi
+- delete unused slide layouts and masters
+- strip embedded video and audio — link to it instead
+- check for the same image placed on many slides; PowerPoint often stores repeats
+
+Use the palette in [`palette/`](../palette/) and the fonts named in the
+[Designer Guide](https://neurodesk.org/developers/designer/#typography).

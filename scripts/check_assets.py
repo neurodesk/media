@@ -53,6 +53,17 @@ BANNED_EXEMPTIONS: dict[str, set[str]] = {
     "palette": {".ai"},
 }
 
+# Individual files allowed to exceed the size cap, with the reason and the agreed ceiling.
+# Keep this list short. Each entry is a deliberate exception, not a precedent — if it is
+# growing, the cap is wrong or the asset is in the wrong format.
+SIZE_EXEMPTIONS: dict[str, tuple[int, str]] = {
+    "figures/neurodesk-contribution-workflow-screenshots.svg": (
+        10 * 1024 * 1024,
+        "composite of UI screenshots; the file is ~100% embedded raster, so svgo "
+        "cannot shrink it and there is no smaller vector form",
+    ),
+}
+
 # <subject>-<variant>[-<size>].<ext> : lowercase alphanumerics separated by hyphens.
 NAME_RE = re.compile(r"^[a-z0-9]+(-[a-z0-9]+)*\.[a-z0-9]+$")
 
@@ -98,6 +109,20 @@ def check_file(path: Path, allowed: set[str], folder: str) -> None:
         )
 
     size = path.stat().st_size
+    exempt = SIZE_EXEMPTIONS.get(str(rel))
+    if exempt:
+        cap, reason = exempt
+        if size > cap:
+            errors.append(
+                f"{rel}: {human(size)} exceeds even its agreed exemption of {human(cap)}. "
+                f"Exemption reason: {reason}"
+            )
+        else:
+            warnings.append(f"{rel}: {human(size)}, size-exempt — {reason}")
+        if ext == ".svg":
+            check_svg(path, rel)
+        return
+
     if ext == ".svg":
         cap = MAX_SVG_BYTES
     elif ext in {".ai", ".potx", ".pptx", ".odp", ".otp", ".key"}:
