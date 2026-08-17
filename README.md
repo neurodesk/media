@@ -35,6 +35,7 @@ figures/        Diagrams and conceptual illustrations for docs and papers
 screenshots/    UI captures of Neurodesktop, the app, and web tools
 templates/      Poster and deck templates (.potx)
 palette/        Official colour palette source files
+font/           Scirich Regular — the Neurodesk display typeface (SIL OFL)
 scripts/        Tooling used by CI and by contributors
 ```
 

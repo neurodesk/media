@@ -34,7 +34,13 @@ ASSET_DIRS: dict[str, set[str]] = {
     # The official colour palette ships as an Illustrator swatch file, so .ai is
     # allowed here and only here. See BRAND.md.
     "palette": {".ai", ".ase", ".json", ".css", ".svg", ".png"},
+    # Font filenames keep vendor casing (Scirich-Regular.ttf), so NAME_RE is not
+    # applied here — see FONT_DIR handling below.
+    "font": {".ttf", ".otf", ".woff2", ".sfd", ".txt"},
 }
+
+# Folders where the lowercase-hyphen filename rule does not apply.
+NAME_EXEMPT_DIRS = {"font"}
 
 # Formats that belong in the design drive, not in git.
 BANNED_EXTENSIONS = {
@@ -61,6 +67,13 @@ SIZE_EXEMPTIONS: dict[str, tuple[int, str]] = {
         10 * 1024 * 1024,
         "composite of UI screenshots; the file is ~100% embedded raster, so svgo "
         "cannot shrink it and there is no smaller vector form",
+    ),
+    "figures/neurodesk-platform.svg": (
+        100 * 1024 * 1024,
+        "all four platform artboards at full image resolution; ~100% embedded raster. "
+        "Kept by explicit decision. NOTE: at ~96 MB this is close to GitHub's 100 MB "
+        "hard limit and is downloaded by every clone. The same content is available as "
+        "four PNGs in this folder",
     ),
 }
 
@@ -102,7 +115,7 @@ def check_file(path: Path, allowed: set[str], folder: str) -> None:
             f"Allowed: {', '.join(sorted(allowed))}"
         )
 
-    if not NAME_RE.match(name):
+    if folder not in NAME_EXEMPT_DIRS and not NAME_RE.match(name):
         errors.append(
             f"{rel}: filename must be lowercase, hyphen-separated, no spaces or "
             f"underscores (e.g. neurodesk-logo-mono-white.svg)"
