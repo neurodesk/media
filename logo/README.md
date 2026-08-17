@@ -9,8 +9,8 @@ the logo is a project mark, not CC-BY. Visual standards live in the
 
 ## Inventory
 
-Migrated from the website repo's `public/logos/` and renamed to a single
-convention. See [MIGRATION.md](../MIGRATION.md) for the old-to-new map.
+Migrated from the website repo's `public/logos/` and renamed to a single convention:
+`neurodesk[-org]-<form>[-pride][-on-dark].<ext>`.
 
 | File | Variant | Use on | Status |
 |---|---|---|---|

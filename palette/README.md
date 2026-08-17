@@ -26,6 +26,7 @@ let developers import it directly instead of copy-pasting hex codes:
 
 Open an issue if you want these generated.
 
-> **Note:** the RGB values in the Designer Guide's table disagree with their own hex
-> codes in 8 of 10 rows. Resolve that before generating any derived formats — see
-> [MIGRATION.md](../MIGRATION.md#also-worth-fixing-while-youre-in-there).
+> **Note:** the logo artwork's ink is `#101806`, which is not in the documented palette
+> under that hex — it appears only as the *RGB cell* of the "Darkest green" row, whose
+> hex cell (`#161c10`) is used solely in the website theme. That row conflates two
+> different colours. Resolve it before generating any derived formats.

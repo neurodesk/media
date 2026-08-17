@@ -21,9 +21,6 @@ Visual standards — palette, typography, capitalization — are documented in t
 [Neurodesk Designer Guide](https://neurodesk.org/developers/designer/), which stays the
 canonical reference. This repo holds the files; the guide explains how to use them.
 
-> **Migration in progress.** The logos and templates still live at
-> `neurodesk.org/static/logos/`. See [MIGRATION.md](MIGRATION.md) for the move plan and
-> the old-to-new filename map.
 
 Attribution string: `Neurodesk (https://neurodesk.org), CC BY 4.0`
 
@@ -33,7 +30,7 @@ Attribution string: `Neurodesk (https://neurodesk.org), CC BY 4.0`
 logo/
   svg/          Vector masters — the source of truth for the mark
   png/          Rendered raster derivatives (generated, do not hand-edit)
-icons/          Small square marks: favicons, app icons, social avatars
+icons/          Icon mark sources plus the full favicon set
 figures/        Diagrams and conceptual illustrations for docs and papers
 screenshots/    UI captures of Neurodesktop, the app, and web tools
 templates/      Poster and deck templates (.potx)

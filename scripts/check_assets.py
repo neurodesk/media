@@ -27,7 +27,7 @@ MAX_DESIGN_BYTES = 8 * 1024 * 1024 # 8 MB, for palette swatches and deck templat
 ASSET_DIRS: dict[str, set[str]] = {
     "logo/svg": {".svg"},
     "logo/png": {".png"},
-    "icons": {".svg", ".png", ".ico"},
+    "icons": {".svg", ".png", ".ico", ".webmanifest"},
     "figures": {".svg", ".png", ".pdf"},
     "screenshots": {".png", ".jpg", ".jpeg", ".gif", ".webm"},
     "templates": {".pdf", ".pptx", ".potx", ".odp", ".otp", ".key"},
