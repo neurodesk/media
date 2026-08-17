@@ -30,7 +30,7 @@ ASSET_DIRS: dict[str, set[str]] = {
     "icons": {".svg", ".png", ".ico"},
     "figures": {".svg", ".png", ".pdf"},
     "screenshots": {".png", ".jpg", ".jpeg", ".gif", ".webm"},
-    "slides": {".pdf", ".pptx", ".potx", ".odp", ".otp", ".key"},
+    "templates": {".pdf", ".pptx", ".potx", ".odp", ".otp", ".key"},
     # The official colour palette ships as an Illustrator swatch file, so .ai is
     # allowed here and only here. See BRAND.md.
     "palette": {".ai", ".ase", ".json", ".css", ".svg", ".png"},

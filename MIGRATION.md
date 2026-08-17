@@ -43,7 +43,10 @@ New convention: `neurodesk[-org]-<form>[-pride][-on-dark].<ext>`, lowercase, hyp
 |---|---|
 | `Neurodesk-color-palette.ai` | `neurodesk-color-palette.ai` |
 
-### Templates → `slides/`
+### Templates → `templates/`
+
+> This folder was called `slides/` until 17 August 2026, renamed because its
+> contents are all poster templates.
 
 | Current | New |
 |---|---|

@@ -36,7 +36,7 @@ logo/
 icons/          Small square marks: favicons, app icons, social avatars
 figures/        Diagrams and conceptual illustrations for docs and papers
 screenshots/    UI captures of Neurodesktop, the app, and web tools
-slides/         Poster and deck templates
+templates/      Poster and deck templates (.potx)
 palette/        Official colour palette source files
 scripts/        Tooling used by CI and by contributors
 ```
