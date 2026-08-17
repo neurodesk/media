@@ -1,0 +1,140 @@
+{
+  "name": "Neurodesk",
+  "source": "https://github.com/neurodesk/media",
+  "licence": "CC-BY-4.0",
+  "note": "Hex is canonical; RGB is derived from it.",
+  "colours": [
+    {
+      "name": "Seafoam green",
+      "slug": "seafoam-green",
+      "hex": "#6aa329",
+      "rgb": [
+        106,
+        163,
+        41
+      ],
+      "group": "primary",
+      "usage": "Primary actions"
+    },
+    {
+      "name": "Logo ink",
+      "slug": "logo-ink",
+      "hex": "#101806",
+      "rgb": [
+        16,
+        24,
+        6
+      ],
+      "group": "primary",
+      "usage": "The dark used in the logo artwork"
+    },
+    {
+      "name": "Black",
+      "slug": "black",
+      "hex": "#0c0e0a",
+      "rgb": [
+        12,
+        14,
+        10
+      ],
+      "group": "secondary",
+      "usage": "Regular text, menu bar"
+    },
+    {
+      "name": "Darkest green",
+      "slug": "darkest-green",
+      "hex": "#161c10",
+      "rgb": [
+        22,
+        28,
+        16
+      ],
+      "group": "secondary",
+      "usage": "Successful selection"
+    },
+    {
+      "name": "Muted olive green",
+      "slug": "muted-olive-green",
+      "hex": "#1e2a16",
+      "rgb": [
+        30,
+        42,
+        22
+      ],
+      "group": "secondary",
+      "usage": "Accent background"
+    },
+    {
+      "name": "Dark olive green",
+      "slug": "dark-olive-green",
+      "hex": "#4f7b38",
+      "rgb": [
+        79,
+        123,
+        56
+      ],
+      "group": "secondary",
+      "usage": "Selected buttons, hyperlinks"
+    },
+    {
+      "name": "Light green",
+      "slug": "light-green",
+      "hex": "#b7d886",
+      "rgb": [
+        183,
+        216,
+        134
+      ],
+      "group": "secondary",
+      "usage": "Hover over a button"
+    },
+    {
+      "name": "Lighter green",
+      "slug": "lighter-green",
+      "hex": "#d3e7b6",
+      "rgb": [
+        211,
+        231,
+        182
+      ],
+      "group": "secondary",
+      "usage": ""
+    },
+    {
+      "name": "Verdant haze",
+      "slug": "verdant-haze",
+      "hex": "#e6f1d6",
+      "rgb": [
+        230,
+        241,
+        214
+      ],
+      "group": "secondary",
+      "usage": "Unselected buttons"
+    },
+    {
+      "name": "Pale lime green",
+      "slug": "pale-lime-green",
+      "hex": "#f0f7e7",
+      "rgb": [
+        240,
+        247,
+        231
+      ],
+      "group": "secondary",
+      "usage": ""
+    },
+    {
+      "name": "White",
+      "slug": "white",
+      "hex": "#ffffff",
+      "rgb": [
+        255,
+        255,
+        255
+      ],
+      "group": "secondary",
+      "usage": ""
+    }
+  ]
+}

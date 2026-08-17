@@ -33,7 +33,7 @@ ASSET_DIRS: dict[str, set[str]] = {
     "templates": {".pdf", ".pptx", ".potx", ".odp", ".otp", ".key"},
     # The official colour palette ships as an Illustrator swatch file, so .ai is
     # allowed here and only here. See BRAND.md.
-    "palette": {".ai", ".ase", ".json", ".css", ".svg", ".png"},
+    "palette": {".ai", ".ase", ".json", ".css", ".gpl", ".pptx", ".svg", ".png"},
     # Font filenames keep vendor casing (Scirich-Regular.ttf), so NAME_RE is not
     # applied here — see FONT_DIR handling below.
     "font": {".ttf", ".otf", ".woff2", ".sfd", ".txt"},

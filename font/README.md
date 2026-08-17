@@ -1,68 +1,43 @@
-# font/
+# Scirich Regular
 
-**Scirich Regular** — the Neurodesk display typeface.
+**Scirich Regular** is a modified version of the open-source [Aldrich](https://fonts.google.com/specimen/Aldrich) typeface originally designed by Matt McInerney.
 
-A modified version of [Aldrich](https://fonts.google.com/specimen/Aldrich) by Matt
-McInerney, adapted and renamed by Michèle Masson-Trottier in April 2025 for the Sciget
-and Neurodesk logos. Licensed under the
-[SIL Open Font License 1.1](LICENSE.txt), as is the original.
+This version has been adapted and renamed by Michèle Masson-Trottier in 2025 to reflect specific visual refinements and customization needs for the Neurodesk logo. It adheres to the requirements of the SIL Open Font License (OFL).
 
-Upstream: [micmas/Scirich-font](https://github.com/micmas/Scirich-font)
-
-## Files
-
-| File | What it is |
-|---|---|
-| `Scirich-Regular.ttf` | Installable TrueType font, 251 glyphs, full basic Latin |
-| `Scirich-Regular.sfd` | FontForge source, for editing |
-| `LICENSE.txt` | SIL OFL 1.1 — **must** travel with the font |
-
-Filenames keep their vendor casing rather than this repo's lowercase convention, because
-font filenames conventionally match the family name.
-
-## Modifications from Aldrich
+## Overview of Modifications
 
 - Minor adjustments to spacing and glyph shapes
-- Metadata and naming updated
-- Renamed to "Scirich Regular", as the OFL requires derivatives to use a different name
+- Metadata and font naming updated to reflect the new version
+- Renamed to "Scirich Regular" to comply with the OFL requirement that derivative fonts use a different name
 
-## If you redistribute it
+## Font Files
 
-The OFL obliges you to:
+The font is available in the `fonts/` directory:
+- `Scirich-Regular.ttf`
 
-- include the full `LICENSE.txt`
-- not use the Reserved Font Name "Aldrich"
-- attribute Matt McInerney and describe your changes
-- keep it under the OFL — it cannot be relicensed
+## License
 
-You may use it in personal, academic, or commercial projects, embed it in websites, apps
-and print, and modify and redistribute it under a new name.
+This font is licensed under the [SIL Open Font License, Version 1.1](LICENSE.txt).
 
-## Scirich is not NeuroRich
+Original font:
+- Name: Aldrich
+- Designer: Matt McInerney
+- Source: https://fonts.google.com/specimen/Aldrich
 
-There are **two** Aldrich derivatives by the same designer, and they are different
-typefaces:
+Modifications and renaming were made by Michèle Masson-Trottier in April 2025.
 
-- **Scirich** — this one, shipped here
-- **NeuroRich** — referenced by the vertical logo masters, which draw the wordmark as
-  live text in it
+## Usage Guidelines
 
-NeuroRich exists only as FontForge source (`Aldrich-NEURODESK-Regular.sfd` in the design
-drive); no installable `.ttf` has been produced. Until one is, the `.ORG` and on-dark
-vertical logo variants cannot be exported with correct lettering.
+You may:
+- Use this font in personal, academic, or commercial projects
+- Modify the font and redistribute your version under a new name
+- Embed the font in websites, apps, or printed materials
 
-The [Designer Guide](https://neurodesk.org/developers/designer/#typography) names Scirich
-as the logo font while the artwork uses NeuroRich. That contradiction is unresolved.
+You must:
+- Not use the Reserved Font Name "Aldrich"
+- Include the full text of the license (LICENSE.txt)
+- Attribute the original creator and describe your changes
 
-## Web use
+## Contact
 
-Only `.ttf` is shipped. For a website, generate `.woff2` — roughly a third the transfer
-size:
-
-```bash
-pip install fonttools brotli
-python3 -c "
-from fontTools.ttLib import TTFont
-f = TTFont('Scirich-Regular.ttf'); f.flavor = 'woff2'
-f.save('Scirich-Regular.woff2')"
-```
+For questions or collaboration, contact Michèle Masson-Trottier at: michelemassontrottier@gmail.com
