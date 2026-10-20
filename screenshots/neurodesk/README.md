@@ -41,6 +41,17 @@ See the NeurodeskEDU tutorial audit for execution results and workarounds.
 | `spm-change-directory-guide.png` | SPM Utils → CD | SPM and PhysIO tutorials |
 | `spm-open-batch-guide.png` | SPM Batch button | PhysIO and batch workflow tutorials |
 
+
+| `freeview-menu-guide.png` | Freeview 8.2.0: Load Volume and Load Surface | FreeSurfer GUI tutorial |
+| `freeview-load-volume-guide.png` | Enter the bundled T1 image path | FreeSurfer GUI tutorial |
+| `freeview-anatomy.png` | Bundled fsaverage anatomy in four views | FreeSurfer GUI tutorial |
+| `freeview-load-segmentation-guide.png` | Load an anatomical label volume with the FreeSurfer lookup table | FreeSurfer GUI tutorial |
+| `freeview-segmentation-guide.png` | Visibility, opacity and reading a structure label | FreeSurfer GUI tutorial |
+| `freeview-select-surface-guide.png` | Choose the bundled left pial surface | FreeSurfer GUI tutorial |
+| `freeview-surface-guide.png` | Volume visibility, Single View and 3D view controls | FreeSurfer GUI tutorial |
+
+The Freeview examples use the bundled **fsaverage demonstration template**, rather than individual participant scans.
+
 ## Refreshing click guides
 
 Capture the real interface without annotations and keep the working capture outside

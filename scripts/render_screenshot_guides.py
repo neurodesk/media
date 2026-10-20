@@ -25,13 +25,16 @@ def render(source, name, markers):
 def main():
  parser=argparse.ArgumentParser(description=__doc__)
  parser.add_argument('--source-dir',type=Path,help='Folder of fresh, unmarked menu captures; these working files are not committed.')
+ parser.add_argument('--only',action='append',help='Refresh only this output filename; repeat for multiple guides.')
  args=parser.parse_args()
  source=Image.open(FOLDER/'neurodesktop-jupyter-launcher.png').convert('RGB')
- for name,markers in GUIDES.items():render(source,name,markers)
+ for name,markers in GUIDES.items():
+  if not args.only or name in args.only:render(source,name,markers)
  if not args.source_dir:
   print('Launcher guides refreshed. Supply --source-dir to refresh menu/control guides.')
   return
  for guide in json.loads((ROOT/'scripts/screenshot-guides.json').read_text()):
+  if args.only and guide['output'] not in args.only:continue
   source=Image.open(args.source_dir/guide['source']).convert('RGB')
   if guide.get('right_padding'):
    padded=Image.new('RGB',(source.width+guide['right_padding'],source.height),'white')
