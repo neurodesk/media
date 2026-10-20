@@ -1,0 +1,996 @@
+[
+  {
+    "source": "launch-mne.png",
+    "size": [
+      850,
+      480
+    ],
+    "title": "Launch MNE: 1 Neurodesk, 2 Electrophysiology, 3 mne, 4 code 0.23.4",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          392,
+          104,
+          17
+        ],
+        "label": [
+          70,
+          435
+        ],
+        "tip": [
+          70,
+          410
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Select Electrophysiology",
+        "target": [
+          106,
+          128,
+          135,
+          17
+        ],
+        "label": [
+          80,
+          136
+        ],
+        "tip": [
+          105,
+          136
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Select mne",
+        "target": [
+          242,
+          287,
+          103,
+          17
+        ],
+        "label": [
+          303,
+          261
+        ],
+        "tip": [
+          303,
+          287
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Select code 0.23.4",
+        "target": [
+          346,
+          287,
+          80,
+          17
+        ],
+        "label": [
+          454,
+          295
+        ],
+        "tip": [
+          427,
+          295
+        ]
+      }
+    ],
+    "output": "launch-mne-guide.png"
+  },
+  {
+    "source": "launch-workbench.png",
+    "size": [
+      896,
+      486
+    ],
+    "title": "Launch Workbench: 1 Neurodesk, 2 Functional Imaging, 3 connectomeworkbench, 4 version 1.5.0",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          413,
+          110,
+          17
+        ],
+        "label": [
+          70,
+          451
+        ],
+        "tip": [
+          70,
+          431
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Choose Functional Imaging",
+        "target": [
+          112,
+          168,
+          143,
+          18
+        ],
+        "label": [
+          88,
+          177
+        ],
+        "tip": [
+          111,
+          177
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Choose connectomeworkbench",
+        "target": [
+          256,
+          134,
+          148,
+          18
+        ],
+        "label": [
+          332,
+          108
+        ],
+        "tip": [
+          332,
+          133
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Choose connectomeworkbench 1.5.0",
+        "target": [
+          405,
+          151,
+          153,
+          18
+        ],
+        "label": [
+          589,
+          160
+        ],
+        "tip": [
+          559,
+          160
+        ]
+      }
+    ],
+    "output": "launch-workbench-guide.png"
+  },
+  {
+    "source": "launch-fieldtrip.png",
+    "size": [
+      1245,
+      675
+    ],
+    "title": "Launch FieldTrip 20211114",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Click fieldtrip 20211114",
+        "target": [
+          508,
+          302,
+          149,
+          23
+        ],
+        "label": [
+          690,
+          314
+        ],
+        "tip": [
+          659,
+          314
+        ]
+      }
+    ],
+    "output": "launch-fieldtrip-guide.png"
+  },
+  {
+    "source": "launch-clear-swi.png",
+    "size": [
+      1245,
+      675
+    ],
+    "title": "Launch CLEAR-SWI: Neurodesk, Phase Processing, clearswi, version 1.7.0",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          0,
+          576,
+          154,
+          24
+        ],
+        "label": [
+          82,
+          620
+        ],
+        "tip": [
+          82,
+          601
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Select Phase Processing",
+        "target": [
+          155,
+          398,
+          200,
+          22
+        ],
+        "label": [
+          105,
+          405
+        ],
+        "tip": [
+          154,
+          405
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Select clearswi",
+        "target": [
+          357,
+          421,
+          147,
+          22
+        ],
+        "label": [
+          428,
+          386
+        ],
+        "tip": [
+          428,
+          416
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Select clearswi 1.7.0",
+        "target": [
+          505,
+          465,
+          120,
+          24
+        ],
+        "label": [
+          665,
+          477
+        ],
+        "tip": [
+          627,
+          477
+        ]
+      }
+    ],
+    "output": "launch-clear-swi-guide.png"
+  },
+  {
+    "source": "launch-itksnap.png",
+    "size": [
+      1245,
+      675
+    ],
+    "title": "Launch ITK-SNAP: Neurodesk, Visualization, itksnap, itksnapGUI 4.4.0",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          0,
+          576,
+          154,
+          24
+        ],
+        "label": [
+          80,
+          620
+        ],
+        "tip": [
+          80,
+          602
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Select Visualization",
+        "target": [
+          155,
+          626,
+          200,
+          24
+        ],
+        "label": [
+          254,
+          603
+        ],
+        "tip": [
+          254,
+          625
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Select itksnap",
+        "target": [
+          357,
+          343,
+          155,
+          24
+        ],
+        "label": [
+          432,
+          314
+        ],
+        "tip": [
+          432,
+          342
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Select itksnapGUI 4.4.0",
+        "target": [
+          513,
+          553,
+          146,
+          24
+        ],
+        "label": [
+          704,
+          565
+        ],
+        "tip": [
+          660,
+          565
+        ]
+      }
+    ],
+    "output": "launch-itksnap-guide.png"
+  },
+  {
+    "source": "launch-romeo.png",
+    "size": [
+      1245,
+      675
+    ],
+    "title": "Launch ROMEO: Neurodesk, Phase Processing, romeo, version 3.2.8",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          0,
+          576,
+          154,
+          24
+        ],
+        "label": [
+          80,
+          620
+        ],
+        "tip": [
+          80,
+          602
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Select Phase Processing",
+        "target": [
+          155,
+          393,
+          200,
+          24
+        ],
+        "label": [
+          106,
+          405
+        ],
+        "tip": [
+          154,
+          405
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Select romeo",
+        "target": [
+          357,
+          486,
+          147,
+          24
+        ],
+        "label": [
+          429,
+          454
+        ],
+        "tip": [
+          429,
+          486
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Select romeo 3.2.8",
+        "target": [
+          505,
+          510,
+          118,
+          24
+        ],
+        "label": [
+          668,
+          522
+        ],
+        "tip": [
+          625,
+          522
+        ]
+      }
+    ],
+    "output": "launch-romeo-guide.png"
+  },
+  {
+    "source": "launch-fmriprep.png",
+    "output": "launch-fmriprep-guide.png",
+    "title": "Launch fmriprep 25.2.6",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          764,
+          205,
+          32
+        ],
+        "label": [
+          104,
+          822
+        ],
+        "tip": [
+          104,
+          798
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Choose Functional Imaging",
+        "target": [
+          208,
+          306,
+          265,
+          32
+        ],
+        "label": [
+          167,
+          320
+        ],
+        "tip": [
+          206,
+          320
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Choose fmriprep",
+        "target": [
+          475,
+          56,
+          274,
+          32
+        ],
+        "label": [
+          610,
+          118
+        ],
+        "tip": [
+          610,
+          89
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Choose fmriprep 25.2.6",
+        "target": [
+          750,
+          367,
+          180,
+          32
+        ],
+        "label": [
+          966,
+          383
+        ],
+        "tip": [
+          932,
+          383
+        ]
+      }
+    ]
+  },
+  {
+    "source": "launch-mriqc.png",
+    "output": "launch-mriqc-guide.png",
+    "title": "Launch mriqc 24.0.2",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          764,
+          205,
+          32
+        ],
+        "label": [
+          104,
+          822
+        ],
+        "tip": [
+          104,
+          798
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Choose Functional Imaging",
+        "target": [
+          208,
+          306,
+          265,
+          32
+        ],
+        "label": [
+          167,
+          320
+        ],
+        "tip": [
+          206,
+          320
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Choose mriqc",
+        "target": [
+          475,
+          493,
+          274,
+          32
+        ],
+        "label": [
+          610,
+          555
+        ],
+        "tip": [
+          610,
+          527
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Choose mriqc 24.0.2",
+        "target": [
+          750,
+          554,
+          180,
+          32
+        ],
+        "label": [
+          953,
+          569
+        ],
+        "tip": [
+          932,
+          569
+        ]
+      }
+    ]
+  },
+  {
+    "source": "launch-physio.png",
+    "output": "launch-physio-guide.png",
+    "title": "Launch physio r2021a",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          764,
+          205,
+          32
+        ],
+        "label": [
+          104,
+          822
+        ],
+        "tip": [
+          104,
+          798
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Choose Functional Imaging",
+        "target": [
+          208,
+          306,
+          265,
+          32
+        ],
+        "label": [
+          167,
+          320
+        ],
+        "tip": [
+          206,
+          320
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Choose physio",
+        "target": [
+          475,
+          585,
+          274,
+          32
+        ],
+        "label": [
+          610,
+          647
+        ],
+        "tip": [
+          610,
+          619
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Choose physio r2021a",
+        "target": [
+          750,
+          616,
+          200,
+          32
+        ],
+        "label": [
+          986,
+          632
+        ],
+        "tip": [
+          951,
+          632
+        ]
+      }
+    ]
+  },
+  {
+    "source": "launch-spm.png",
+    "output": "launch-spm-guide.png",
+    "title": "Launch spm",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          764,
+          205,
+          32
+        ],
+        "label": [
+          104,
+          822
+        ],
+        "tip": [
+          104,
+          798
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Choose Functional Imaging",
+        "target": [
+          208,
+          306,
+          265,
+          32
+        ],
+        "label": [
+          167,
+          322
+        ],
+        "tip": [
+          206,
+          322
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Choose spm",
+        "target": [
+          475,
+          741,
+          275,
+          32
+        ],
+        "label": [
+          558,
+          711
+        ],
+        "tip": [
+          558,
+          739
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Choose the indicated spm entry",
+        "target": [
+          750,
+          772,
+          223,
+          32
+        ],
+        "label": [
+          999,
+          787
+        ],
+        "tip": [
+          974,
+          787
+        ]
+      }
+    ]
+  },
+  {
+    "source": "launch-matlab.png",
+    "output": "launch-matlab-guide.png",
+    "title": "Launch matlab",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          764,
+          205,
+          32
+        ],
+        "label": [
+          104,
+          822
+        ],
+        "tip": [
+          104,
+          798
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Choose Programming",
+        "target": [
+          208,
+          555,
+          265,
+          32
+        ],
+        "label": [
+          167,
+          571
+        ],
+        "tip": [
+          206,
+          571
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Choose matlab",
+        "target": [
+          475,
+          678,
+          206,
+          32
+        ],
+        "label": [
+          558,
+          648
+        ],
+        "tip": [
+          558,
+          677
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Choose the indicated matlab entry",
+        "target": [
+          681,
+          768,
+          220,
+          32
+        ],
+        "label": [
+          927,
+          783
+        ],
+        "tip": [
+          903,
+          783
+        ]
+      }
+    ]
+  },
+  {
+    "source": "launch-lcmodel.png",
+    "output": "launch-lcmodel-guide.png",
+    "title": "Launch lcmodel",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          764,
+          205,
+          32
+        ],
+        "label": [
+          104,
+          822
+        ],
+        "tip": [
+          104,
+          798
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Choose Spectroscopy",
+        "target": [
+          208,
+          711,
+          265,
+          32
+        ],
+        "label": [
+          167,
+          726
+        ],
+        "tip": [
+          206,
+          726
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Choose lcmodel",
+        "target": [
+          475,
+          711,
+          180,
+          32
+        ],
+        "label": [
+          558,
+          681
+        ],
+        "tip": [
+          558,
+          709
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Choose the indicated lcmodel entry",
+        "target": [
+          655,
+          711,
+          175,
+          32
+        ],
+        "label": [
+          856,
+          726
+        ],
+        "tip": [
+          831,
+          726
+        ]
+      }
+    ]
+  },
+  {
+    "source": "spm-change-directory.png",
+    "size": [
+      293,
+      201
+    ],
+    "title": "SPM main Menu: 1 Utils, 2 CD",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Utils",
+        "target": [
+          82,
+          58,
+          60,
+          20
+        ],
+        "label": [
+          201,
+          58
+        ],
+        "tip": [
+          144,
+          68
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Choose CD",
+        "target": [
+          83,
+          92,
+          59,
+          16
+        ],
+        "label": [
+          195,
+          115
+        ],
+        "tip": [
+          145,
+          101
+        ]
+      }
+    ],
+    "output": "spm-change-directory-guide.png"
+  },
+  {
+    "source": "spm-open-batch.png",
+    "size": [
+      212,
+      244
+    ],
+    "title": "Open SPM Batch Editor",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Click Batch",
+        "target": [
+          110,
+          219,
+          38,
+          15
+        ],
+        "label": [
+          150,
+          191
+        ],
+        "tip": [
+          133,
+          217
+        ]
+      }
+    ],
+    "output": "spm-open-batch-guide.png"
+  }
+]

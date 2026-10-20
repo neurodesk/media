@@ -46,4 +46,4 @@ process in [CONTRIBUTING.md](../CONTRIBUTING.md#removing-or-replacing-an-asset).
 
 | File | Shows | Version captured | Appears in |
 |---|---|---|---|
-| _none yet_ | | | |
+| [neurodesk/](neurodesk/README.md) | Canonical platform and software-launch screenshots, including numbered click guides | Neurodesk Play, 20 October 2026 | NeurodeskEDU tutorials and reusable documentation |
