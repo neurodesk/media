@@ -41,7 +41,7 @@ See the NeurodeskEDU tutorial audit for execution results and workarounds.
 | `spm-change-directory-guide.png` | SPM Utils → CD | SPM and PhysIO tutorials |
 | `spm-open-batch-guide.png` | SPM Batch button | PhysIO and batch workflow tutorials |
 | `freeview-start.png` | Freeview 8.2.0 fully opened, before loading an image | FreeSurfer GUI tutorial |
-| `mriqc-loaded-terminal.png` | MRIQC 24.0.2 loaded terminal and executable version | MRIQC tutorials |
+| `mriqc-loaded-terminal.png` | MRIQC 24.0.2 loaded terminal and resolved executable | MRIQC tutorials |
 | `osf-download-folder-guide.png` | OSF current-folder Download As Zip control, shown on the public MFCSC example | MFCSC and open-data tutorials |
 | `launch-mfcsc-guide.png` | Neurodesk → Functional Imaging → mfcsc → mfcsc 1.1 | MFCSC tutorial |
 | `freeview-menu-guide.png` | Freeview 8.2.0: Load Volume and Load Surface | FreeSurfer GUI tutorial |
@@ -76,3 +76,5 @@ visually, then optimize it with `oxipng -o 4 --strip safe` and run
 Use a stable media tag when an immutable published tutorial needs a pinned capture.
 During coordinated PR review, a media feature-branch URL can be used; update consumers
 to the maintained media branch after the media PR is merged.
+
+Capture UI screenshots at the native desktop resolution, before browser scaling, and save the original PNG. Do not upscale a browser screenshot or convert a JPEG back to PNG. The click-guide renderer preserves the original pixel colours and adds green markers without palette quantisation.

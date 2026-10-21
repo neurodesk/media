@@ -22,7 +22,7 @@ def render(source, name, markers):
    x,y=label;draw.ellipse((x-15,y-15,x+15,y+15),fill='#456b1b',outline='white',width=2)
    left,top,right,bottom=draw.textbbox((0,0),str(number),font=font)
    draw.text((x-(left+right)/2,y-(top+bottom)/2),str(number),font=font,fill='white')
- image.quantize(colors=256,method=Image.Quantize.MEDIANCUT,dither=Image.Dither.NONE).save(FOLDER/name,optimize=True)
+ image.save(FOLDER/name,format='PNG',optimize=True)
 def main():
  parser=argparse.ArgumentParser(description=__doc__)
  parser.add_argument('--source-dir',type=Path,help='Folder of fresh, unmarked menu captures; these working files are not committed.')

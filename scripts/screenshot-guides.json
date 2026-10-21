@@ -1309,8 +1309,8 @@
   {
     "source": "launch-mfcsc.png",
     "size": [
-      806,
-      434
+      1280,
+      690
     ],
     "title": "Launch MFCSC 1.1",
     "markers": [
@@ -1318,72 +1318,72 @@
         "number": 1,
         "text": "Open Neurodesk",
         "target": [
-          1,
-          372,
-          98,
-          15
+          2,
+          591,
+          156,
+          24
         ],
         "label": [
-          71,
-          412
+          113,
+          654
         ],
         "tip": [
-          71,
-          388
+          113,
+          616
         ]
       },
       {
         "number": 2,
         "text": "Select Functional Imaging",
         "target": [
-          101,
-          149,
-          129,
-          15
+          160,
+          237,
+          205,
+          24
         ],
         "label": [
-          84,
-          157
+          133,
+          249
         ],
         "tip": [
-          100,
-          157
+          159,
+          249
         ]
       },
       {
         "number": 3,
         "text": "Select mfcsc",
         "target": [
-          230,
-          209,
-          133,
-          15
+          365,
+          332,
+          211,
+          24
         ],
         "label": [
-          299,
-          190
+          475,
+          302
         ],
         "tip": [
-          299,
-          208
+          475,
+          330
         ]
       },
       {
         "number": 4,
         "text": "Select mfcsc 1.1",
         "target": [
-          365,
-          224,
-          69,
-          15
+          580,
+          356,
+          110,
+          24
         ],
         "label": [
-          453,
-          232
+          719,
+          368
         ],
         "tip": [
-          434,
-          232
+          689,
+          368
         ]
       }
     ],
@@ -1392,26 +1392,26 @@
   {
     "source": "osf-download-folder.png",
     "size": [
-      806,
-      434
+      1280,
+      690
     ],
     "title": "OSF: download the current folder as Zip",
     "markers": [
       {
         "number": 1,
         "target": [
-          649,
-          219,
-          113,
-          28
+          1031,
+          348,
+          179,
+          44
         ],
         "label": [
-          702,
-          196
+          1115,
+          311
         ],
         "tip": [
-          702,
-          218
+          1115,
+          346
         ],
         "text": "Download input as Zip"
       }
