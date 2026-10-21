@@ -42,6 +42,7 @@ See the NeurodeskEDU tutorial audit for execution results and workarounds.
 | `spm-open-batch-guide.png` | SPM Batch button | PhysIO and batch workflow tutorials |
 | `freeview-start.png` | Freeview 8.2.0 fully opened, before loading an image | FreeSurfer GUI tutorial |
 | `mriqc-loaded-terminal.png` | MRIQC 24.0.2 loaded terminal and executable version | MRIQC tutorials |
+| `osf-download-folder-guide.png` | OSF current-folder Download As Zip control, shown on the public MFCSC example | MFCSC and open-data tutorials |
 | `launch-mfcsc-guide.png` | Neurodesk → Functional Imaging → mfcsc → mfcsc 1.1 | MFCSC tutorial |
 | `freeview-menu-guide.png` | Freeview 8.2.0: Load Volume and Load Surface | FreeSurfer GUI tutorial |
 | `freeview-load-volume-guide.png` | Enter the bundled T1 image path | FreeSurfer GUI tutorial |

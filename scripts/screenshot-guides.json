@@ -1388,5 +1388,34 @@
       }
     ],
     "output": "launch-mfcsc-guide.png"
+  },
+  {
+    "source": "osf-download-folder.png",
+    "size": [
+      806,
+      434
+    ],
+    "title": "OSF: download the current folder as Zip",
+    "markers": [
+      {
+        "number": 1,
+        "target": [
+          649,
+          219,
+          113,
+          28
+        ],
+        "label": [
+          702,
+          196
+        ],
+        "tip": [
+          702,
+          218
+        ],
+        "text": "Download input as Zip"
+      }
+    ],
+    "output": "osf-download-folder-guide.png"
   }
 ]
