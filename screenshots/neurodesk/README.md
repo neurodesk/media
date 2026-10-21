@@ -42,17 +42,10 @@ See the NeurodeskEDU tutorial audit for execution results and workarounds.
 | `spm-open-batch-guide.png` | SPM Batch button | PhysIO and batch workflow tutorials |
 | `freeview-start.png` | Freeview 8.2.0 fully opened, before loading an image | FreeSurfer GUI tutorial |
 | `mriqc-loaded-terminal.png` | MRIQC 24.0.2 loaded terminal and resolved executable | MRIQC tutorials |
-| `osf-download-folder-guide.png` | OSF current-folder Download As Zip control, shown on the public MFCSC example | MFCSC and open-data tutorials |
 | `launch-mfcsc-guide.png` | Neurodesk → Functional Imaging → mfcsc → mfcsc 1.1 | MFCSC tutorial |
 | `freeview-menu-guide.png` | Freeview 8.2.0: Load Volume and Load Surface | FreeSurfer GUI tutorial |
-| `freeview-load-volume-guide.png` | Enter the bundled T1 image path | FreeSurfer GUI tutorial |
-| `freeview-anatomy.png` | Bundled fsaverage anatomy in four views | FreeSurfer GUI tutorial |
-| `freeview-load-segmentation-guide.png` | Load an anatomical label volume with the FreeSurfer lookup table | FreeSurfer GUI tutorial |
-| `freeview-segmentation-guide.png` | Visibility, opacity and reading a structure label | FreeSurfer GUI tutorial |
-| `freeview-select-surface-guide.png` | Choose the bundled left pial surface | FreeSurfer GUI tutorial |
-| `freeview-surface-guide.png` | Volume visibility, Single View and 3D view controls | FreeSurfer GUI tutorial |
 
-The Freeview examples use the bundled **fsaverage demonstration template**, rather than individual participant scans.
+Dataset downloads, selected file paths and scientific results belong in NeurodeskEDU, grouped by tutorial. The fsaverage walkthrough and MFCSC download screenshots have moved there; their generic application-opening controls stay here.
 
 ## Refreshing click guides
 
@@ -69,7 +62,7 @@ python scripts/render_screenshot_guides.py --source-dir /path/to/working-capture
 
 Omit `--source-dir` to regenerate only the launcher variants from the shared launcher
 master. The renderer centres numbers using their glyph bounds and uses the Neurodesk green palette. It adds boxes, leader lines and numbers; it does not synthesize UI.
-Exports use an indexed PNG palette without resizing. Check every resulting guide
+Exports preserve full PNG colours without resizing. Check every resulting guide
 visually, then optimize it with `oxipng -o 4 --strip safe` and run
 `python scripts/check_assets.py`.
 
