@@ -12,7 +12,7 @@ each points at a different destination.
 
 ## Inventory
 
-All captures below were made on 20 October 2026. Desktop captures use the VNC
+Platform captures were made on 20 October 2026; Freeview startup, MRIQC terminal and MFCSC launch captures were added on 21 October 2026. Click-guide colours and launcher alignment were refreshed on 21 October 2026. Desktop captures use the VNC
 desktop at its native 1280 × 720 proportions. Menus show actual installed entries;
 an entry's presence does not establish that its launcher or a full analysis works.
 See the NeurodeskEDU tutorial audit for execution results and workarounds.
@@ -40,8 +40,9 @@ See the NeurodeskEDU tutorial audit for execution results and workarounds.
 | `launch-romeo-guide.png` | ROMEO 3.2.8 menu entry | ROMEO tutorial |
 | `spm-change-directory-guide.png` | SPM Utils → CD | SPM and PhysIO tutorials |
 | `spm-open-batch-guide.png` | SPM Batch button | PhysIO and batch workflow tutorials |
-
-
+| `freeview-start.png` | Freeview 8.2.0 fully opened, before loading an image | FreeSurfer GUI tutorial |
+| `mriqc-loaded-terminal.png` | MRIQC 24.0.2 loaded terminal and executable version | MRIQC tutorials |
+| `launch-mfcsc-guide.png` | Neurodesk → Functional Imaging → mfcsc → mfcsc 1.1 | MFCSC tutorial |
 | `freeview-menu-guide.png` | Freeview 8.2.0: Load Volume and Load Surface | FreeSurfer GUI tutorial |
 | `freeview-load-volume-guide.png` | Enter the bundled T1 image path | FreeSurfer GUI tutorial |
 | `freeview-anatomy.png` | Bundled fsaverage anatomy in four views | FreeSurfer GUI tutorial |
@@ -66,7 +67,7 @@ python scripts/render_screenshot_guides.py --source-dir /path/to/working-capture
 ```
 
 Omit `--source-dir` to regenerate only the launcher variants from the shared launcher
-master. The renderer adds boxes, leader lines and numbers; it does not synthesize UI.
+master. The renderer centres numbers using their glyph bounds and uses the Neurodesk green palette. It adds boxes, leader lines and numbers; it does not synthesize UI.
 Exports use an indexed PNG palette without resizing. Check every resulting guide
 visually, then optimize it with `oxipng -o 4 --strip safe` and run
 `python scripts/check_assets.py`.

@@ -7,9 +7,9 @@ from PIL import Image,ImageDraw,ImageFont
 ROOT=Path(__file__).resolve().parents[1]
 FOLDER=ROOT/'screenshots/neurodesk'
 GUIDES={
- 'neurodesktop-launcher-desktop.png':[(1,(166,194,269,297),(217,329),(217,299)),(2,(284,194,387,297),(335,329),(335,299))],
- 'neurodesktop-launcher-terminal.png':[(1,(520,194,624,297),(573,329),(573,299))],
- 'neurodesktop-launcher-notebook.png':[(1,(166,562,269,665),(139,614),(164,614))],
+ 'neurodesktop-launcher-desktop.png':[(1,(182,194,283,297),(233,316),(233,299)),(2,(300,194,401,297),(351,316),(351,299))],
+ 'neurodesktop-launcher-terminal.png':[(1,(536,194,637,297),(587,316),(587,299))],
+ 'neurodesktop-launcher-notebook.png':[(1,(182,562,283,665),(155,614),(180,614))],
 }
 def render(source, name, markers):
  try:font=ImageFont.truetype('DejaVuSans-Bold.ttf',18)
@@ -17,10 +17,11 @@ def render(source, name, markers):
  image=source.copy();draw=ImageDraw.Draw(image)
  for number,box,label,tip in markers:
    draw.rounded_rectangle(box,radius=4,outline='white',width=6)
-   draw.rounded_rectangle(box,radius=4,outline='#e76f00',width=3)
-   draw.line([label,tip],fill='white',width=6);draw.line([label,tip],fill='#e76f00',width=3)
-   x,y=label;draw.ellipse((x-15,y-15,x+15,y+15),fill='#123c5a',outline='white',width=2)
-   draw.text(label,str(number),font=font,anchor='mm',fill='white')
+   draw.rounded_rectangle(box,radius=4,outline='#6aa329',width=3)
+   draw.line([label,tip],fill='white',width=6);draw.line([label,tip],fill='#6aa329',width=3)
+   x,y=label;draw.ellipse((x-15,y-15,x+15,y+15),fill='#456b1b',outline='white',width=2)
+   left,top,right,bottom=draw.textbbox((0,0),str(number),font=font)
+   draw.text((x-(left+right)/2,y-(top+bottom)/2),str(number),font=font,fill='white')
  image.quantize(colors=256,method=Image.Quantize.MEDIANCUT,dither=Image.Dither.NONE).save(FOLDER/name,optimize=True)
 def main():
  parser=argparse.ArgumentParser(description=__doc__)

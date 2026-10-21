@@ -1305,5 +1305,88 @@
         ]
       }
     ]
+  },
+  {
+    "source": "launch-mfcsc.png",
+    "size": [
+      806,
+      434
+    ],
+    "title": "Launch MFCSC 1.1",
+    "markers": [
+      {
+        "number": 1,
+        "text": "Open Neurodesk",
+        "target": [
+          1,
+          372,
+          98,
+          15
+        ],
+        "label": [
+          71,
+          412
+        ],
+        "tip": [
+          71,
+          388
+        ]
+      },
+      {
+        "number": 2,
+        "text": "Select Functional Imaging",
+        "target": [
+          101,
+          149,
+          129,
+          15
+        ],
+        "label": [
+          84,
+          157
+        ],
+        "tip": [
+          100,
+          157
+        ]
+      },
+      {
+        "number": 3,
+        "text": "Select mfcsc",
+        "target": [
+          230,
+          209,
+          133,
+          15
+        ],
+        "label": [
+          299,
+          190
+        ],
+        "tip": [
+          299,
+          208
+        ]
+      },
+      {
+        "number": 4,
+        "text": "Select mfcsc 1.1",
+        "target": [
+          365,
+          224,
+          69,
+          15
+        ],
+        "label": [
+          453,
+          232
+        ],
+        "tip": [
+          434,
+          232
+        ]
+      }
+    ],
+    "output": "launch-mfcsc-guide.png"
   }
 ]
