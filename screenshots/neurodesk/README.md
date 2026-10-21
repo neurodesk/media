@@ -26,7 +26,7 @@ See the NeurodeskEDU tutorial audit for execution results and workarounds.
 | `neurodesktop-desktop.png` | Empty Neurodesktop workspace | NeurodeskEDU access guide |
 | `neurodesktop-application-menu.png` | Neurodesk tool categories | NeurodeskEDU access guide |
 | `neurodesktop-terminal.png` | Empty LXTerminal; commands go after the prompt | NeurodeskEDU access guide, SWI, ROMEO |
-| `launch-mne-guide.png` | Neurodesk → Electrophysiology → mne → code 0.23.4 | MNE tutorial; reusable editor launch guide |
+| `launch-mne-guide.png` | Neurodesk → Electrophysiology → mne → code 0.23.4; native 1280-pixel recapture, 21 October 2026 | MNE tutorial; reusable editor launch guide |
 | `launch-fieldtrip-guide.png` | FieldTrip 20211114 | FieldTrip tutorial |
 | `launch-workbench-guide.png` | Connectome Workbench 1.5.0 | Workbench tutorial |
 | `launch-fmriprep-guide.png` | fMRIPrep 25.2.6 | fMRIPrep tutorial |

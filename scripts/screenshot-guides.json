@@ -2,8 +2,8 @@
   {
     "source": "launch-mne.png",
     "size": [
-      850,
-      480
+      1280,
+      696
     ],
     "title": "Launch MNE: 1 Neurodesk, 2 Electrophysiology, 3 mne, 4 code 0.23.4",
     "markers": [
@@ -12,71 +12,71 @@
         "text": "Open Neurodesk",
         "target": [
           1,
-          392,
-          104,
-          17
+          590,
+          156,
+          24
         ],
         "label": [
-          70,
-          435
+          127,
+          602
         ],
         "tip": [
-          70,
-          410
+          145,
+          602
         ]
       },
       {
         "number": 2,
         "text": "Select Electrophysiology",
         "target": [
-          106,
-          128,
-          135,
-          17
+          160,
+          188,
+          205,
+          24
         ],
         "label": [
-          80,
-          136
+          128,
+          200
         ],
         "tip": [
-          105,
-          136
+          159,
+          200
         ]
       },
       {
         "number": 3,
-        "text": "Select mne",
+        "text": "Open mne",
         "target": [
-          242,
-          287,
-          103,
-          17
+          366,
+          428,
+          155,
+          24
         ],
         "label": [
-          303,
-          261
+          475,
+          440
         ],
         "tip": [
-          303,
-          287
+          490,
+          440
         ]
       },
       {
         "number": 4,
-        "text": "Select code 0.23.4",
+        "text": "Choose code 0.23.4",
         "target": [
-          346,
-          287,
-          80,
-          17
+          521,
+          428,
+          120,
+          24
         ],
         "label": [
-          454,
-          295
+          676,
+          439
         ],
         "tip": [
-          427,
-          295
+          642,
+          439
         ]
       }
     ],
