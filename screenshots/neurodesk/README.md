@@ -12,7 +12,7 @@ each points at a different destination.
 
 ## Inventory
 
-All captures below were made on 20 October 2026. Desktop captures use the VNC
+Platform captures were made on 20 October 2026; Freeview startup, MRIQC terminal and MFCSC launch captures were added on 21 October 2026. Click-guide colours and launcher alignment were refreshed on 21 October 2026. Desktop captures use the VNC
 desktop at its native 1280 × 720 proportions. Menus show actual installed entries;
 an entry's presence does not establish that its launcher or a full analysis works.
 See the NeurodeskEDU tutorial audit for execution results and workarounds.
@@ -26,7 +26,7 @@ See the NeurodeskEDU tutorial audit for execution results and workarounds.
 | `neurodesktop-desktop.png` | Empty Neurodesktop workspace | NeurodeskEDU access guide |
 | `neurodesktop-application-menu.png` | Neurodesk tool categories | NeurodeskEDU access guide |
 | `neurodesktop-terminal.png` | Empty LXTerminal; commands go after the prompt | NeurodeskEDU access guide, SWI, ROMEO |
-| `launch-mne-guide.png` | Neurodesk → Electrophysiology → mne → code 0.23.4 | MNE tutorial; reusable editor launch guide |
+| `launch-mne-guide.png` | Neurodesk → Electrophysiology → mne → code 0.23.4; native 1280-pixel recapture, 21 October 2026 | MNE tutorial; reusable editor launch guide |
 | `launch-fieldtrip-guide.png` | FieldTrip 20211114 | FieldTrip tutorial |
 | `launch-workbench-guide.png` | Connectome Workbench 1.5.0 | Workbench tutorial |
 | `launch-fmriprep-guide.png` | fMRIPrep 25.2.6 | fMRIPrep tutorial |
@@ -40,6 +40,12 @@ See the NeurodeskEDU tutorial audit for execution results and workarounds.
 | `launch-romeo-guide.png` | ROMEO 3.2.8 menu entry | ROMEO tutorial |
 | `spm-change-directory-guide.png` | SPM Utils → CD | SPM and PhysIO tutorials |
 | `spm-open-batch-guide.png` | SPM Batch button | PhysIO and batch workflow tutorials |
+| `freeview-start.png` | Freeview 8.2.0 fully opened, before loading an image | FreeSurfer GUI tutorial |
+| `mriqc-loaded-terminal.png` | MRIQC 24.0.2 loaded terminal and resolved executable | MRIQC tutorials |
+| `launch-mfcsc-guide.png` | Neurodesk → Functional Imaging → mfcsc → mfcsc 1.1 | MFCSC tutorial |
+| `freeview-menu-guide.png` | Freeview 8.2.0: Load Volume and Load Surface | FreeSurfer GUI tutorial |
+
+Dataset downloads, selected file paths and scientific results belong in NeurodeskEDU, grouped by tutorial. The fsaverage walkthrough and MFCSC download screenshots have moved there; their generic application-opening controls stay here.
 
 ## Refreshing click guides
 
@@ -55,11 +61,13 @@ python scripts/render_screenshot_guides.py --source-dir /path/to/working-capture
 ```
 
 Omit `--source-dir` to regenerate only the launcher variants from the shared launcher
-master. The renderer adds boxes, leader lines and numbers; it does not synthesize UI.
-Exports use an indexed PNG palette without resizing. Check every resulting guide
+master. The renderer centres numbers using their glyph bounds and uses the Neurodesk green palette. It adds boxes, leader lines and numbers; it does not synthesize UI.
+Exports preserve full PNG colours without resizing. Check every resulting guide
 visually, then optimize it with `oxipng -o 4 --strip safe` and run
 `python scripts/check_assets.py`.
 
 Use a stable media tag when an immutable published tutorial needs a pinned capture.
 During coordinated PR review, a media feature-branch URL can be used; update consumers
 to the maintained media branch after the media PR is merged.
+
+Capture UI screenshots at the native desktop resolution, before browser scaling, and save the original PNG. Do not upscale a browser screenshot or convert a JPEG back to PNG. The click-guide renderer preserves the original pixel colours and adds green markers without palette quantisation.
