@@ -34,12 +34,15 @@ icons/          Icon mark sources plus the full favicon set
 figures/        Diagrams and conceptual illustrations for docs and papers
 screenshots/    UI captures of Neurodesktop, the app, and web tools
 templates/      Poster and deck templates (.potx)
+social/         Draft social posts with links to their sources
 palette/        Official colour palette source files
 font/           Scirich Regular — the Neurodesk display typeface (SIL OFL)
 scripts/        Tooling used by CI and by contributors
 ```
 
 Every asset folder has its own `README.md` describing what belongs there.
+
+For ready-to-review feature announcements, see the [LinkedIn post drafts](social/linkedin-feature-posts.md).
 
 ## Using an asset
 
